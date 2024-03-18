@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"> <!-- Définit l'encodage de la page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Méta-informations pour la compatibilité mobile -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Méta pour la compatibilité avec Internet Explorer -->
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Importe Bootstrap CSS -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css"> <!-- Importe votre fichier CSS personnalisé -->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Importe la bibliothèque jQuery -->
+  <title>Le Pondu</title> <!-- Titre de la page -->
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Le Pendu</h1> <!-- Titre principal centré -->
+  <div class="float-right">Mauvaises réponses : <span id='mistakes'>0</span> sur <span id='maxWrong'></span></div> <!-- Affichage du nombre de mauvaises réponses -->
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.jpg" alt=""> <!-- Image du pendu -->
+    <p>Devinez les mots à l'informatique :</p> <!-- Instructions pour le jeu -->
+    <p id="wordSpotlight">Le mot à deviner apparaît ici </p> <!-- Affichage du mot à deviner -->
+    <div id="keyboard"></div> <!-- Clavier virtuel pour les lettres -->
+    <button class="btn btn-info" id="resetButton">Réinitialiser</button> <!-- Bouton de réinitialisation -->
+  </div> 
+</div>
+<script src='hangmany.js'></script> <!-- Importe le fichier JavaScript pour le jeu du pendu -->
+</body>
+</html>

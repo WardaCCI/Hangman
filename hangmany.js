@@ -1,11 +1,7 @@
 $(document).ready(function() {
   // Liste des mots de programmation pour le jeu
-  var programming_languages = [
-    "informatique",
-    "developpement",
-    "web",
-    // Autres mots de programmation...
-    "oracle",
+ var programming_languages = [
+    "informatique","developpement","web", "Programmation", "Site", "Serveur", "Client", "Navigateur", "HTML", "CSS", "JavaScript", "Framework", "Base de données", "API", "Responsive", "Backend", "Frontend", "Version", "oracle",
   ]
 
   let answer = '';
